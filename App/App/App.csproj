@@ -65,6 +65,12 @@
     <Compile Include="AdminTables.Designer.cs">
       <DependentUpon>AdminTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TenantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenantForm.Designer.cs">
+      <DependentUpon>TenantForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminTables.resx">
       <DependentUpon>AdminTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +114,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TenantForm.resx">
+      <DependentUpon>TenantForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="PraticeDataSet.xsc">
       <DependentUpon>PraticeDataSet.xsd</DependentUpon>
     </None>
@@ -145,6 +163,9 @@
       <Project>{aef382e5-fe5f-438b-b075-403b8fd5bff6}</Project>
       <Name>Lib1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Te.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

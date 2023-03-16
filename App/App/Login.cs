@@ -53,12 +53,10 @@ namespace App
                 if (role_id == 1)
                 {
                     User user = new User(id, "Tenant", name);
+                    TenantForm m = new TenantForm((User)user);
+                    NewForm(m);
 
-
-                }
-                // Global.Login = textBox1.Text;
-
-                
+                }    
             }
             else
             {
