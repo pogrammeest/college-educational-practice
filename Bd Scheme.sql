@@ -43,3 +43,7 @@ CREATE TABLE ServiceInvoice (
     CONSTRAINT UN_ServiceInvoice_ID UNIQUE(ID),
 )
 
+CREATE TABLE Roles (
+    ID int NOT NULL PRIMARY KEY,
+    [name] nvarchar(50) NOT NULL,
+)

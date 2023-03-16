@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,16 +59,35 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="AdminTables.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="AdminTables.Designer.cs">
+      <DependentUpon>AdminTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PraticeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraticeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraticeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraticeDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTables.resx">
+      <DependentUpon>AdminTables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +99,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="PraticeDataSet.xsc">
+      <DependentUpon>PraticeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PraticeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraticeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraticeDataSet.xss">
+      <DependentUpon>PraticeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PraticeDataSet1.xsc">
+      <DependentUpon>PraticeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PraticeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraticeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraticeDataSet1.xss">
+      <DependentUpon>PraticeDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +136,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ertiscity-logo-original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib1\Lib1.csproj">
+      <Project>{aef382e5-fe5f-438b-b075-403b8fd5bff6}</Project>
+      <Name>Lib1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
